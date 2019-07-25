@@ -8,7 +8,7 @@ class TestMainPage1():
     @classmethod
     def setup_class(cls):
         print("\nstart browser for test suite..")
-        cls.browser = webdriver.Chrome()
+        cls.browser = webdriver.Chrome("C:\Chromedriver\chromedriver")
 
     @classmethod
     def teardown_class(cls):
@@ -28,7 +28,7 @@ class TestMainPage2():
 
     def setup_method(self):
         print("start browser for test..")
-        self.browser = webdriver.Chrome()
+        self.browser = webdriver.Chrome("C:\Chromedriver\chromedriver")
 
     def teardown_method(self):
         print("quit browser for test..")
